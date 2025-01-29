@@ -29,10 +29,10 @@ body {
     padding: 20px;
 }
 
-/* Logo - Responsive Size */
+/* Logo - Bigger on Desktop */
 .logo {
-    width: 40%; /* Large on desktop */
-    max-width: 300px;
+    width: 60%; /* Increased for desktop */
+    max-width: 500px; /* Significantly larger on bigger screens */
     height: auto;
     margin-bottom: 20px;
 }
@@ -43,18 +43,19 @@ body {
     width: 100%;
 }
 
-/* Responsive Text */
+/* Responsive Text (Reduced Font Size) */
 .content h1 {
-    font-size: 2.5rem;
-    line-height: 1.2;
+    font-size: 2rem; /* Reduced by 5 units */
+    line-height: 1.4; /* Keeps spacing */
     white-space: nowrap;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 20px; /* Ensures gap */
 }
 
 .content p {
-    font-size: 1.6rem;
+    font-size: 1.1rem; /* Reduced by 5 units */
 }
 
 .content a {
@@ -66,21 +67,8 @@ body {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .logo {
-        width: 50%; /* Adjusts for tablets */
-    }
-
-    .content h1 {
-        font-size: 2rem;
-    }
-
-    .content p {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .logo {
-        width: 60%;
+        width: 50%;
+        max-width: 400px;
     }
 
     .content h1 {
@@ -88,22 +76,38 @@ body {
     }
 
     .content p {
-        font-size: 1.3rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 55%;
+        max-width: 350px;
+    }
+
+    .content h1 {
+        font-size: 1.6rem;
+    }
+
+    .content p {
+        font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        width: 70%; /* Smaller logo on mobile */
+        width: 70%;
+        max-width: 250px;
     }
 
     .content h1 {
-        font-size: 1.5rem;
-        white-space: normal; /* Allows text to fit in one line */
+        font-size: 1.3rem;
+        white-space: normal;
     }
 
     .content p {
-        font-size: 1.1rem;
+        font-size: 0.85rem;
     }
 }
 
@@ -114,15 +118,16 @@ body {
     }
 
     .logo {
-        width: 80%; /* Further reduce size for small screens */
+        width: 80%;
+        max-width: 200px;
     }
 
     .content h1 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     .content p {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
