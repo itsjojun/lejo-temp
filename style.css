@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Infant', serif;
+    background-color: #d8a18f;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Flex container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Logo */
+.logo {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Content */
+.content {
+    padding: 10px;
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 2.2rem;
+    white-space: nowrap;
+}
+
+.content p {
+    font-size: 1.5rem;
+}
+
+.content a {
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .logo {
+        max-width: 60%;
+    }
+
+    .content h1 {
+        font-size: 2rem;
+        white-space: normal;
+    }
+
+    .content p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 70%;
+    }
+
+    .content h1 {
+        font-size: 1.8rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+}
+
+/* iPhone 12 Mini Specific */
+@media (max-width: 360px) {
+    .container {
+        padding: 5px;
+    }
+
+    .logo {
+        max-width: 80%;
+    }
+
+    .content h1 {
+        font-size: 1.6rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+
+/* Copyright */
+.copyright-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: black;
+}
