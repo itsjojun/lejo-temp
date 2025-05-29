@@ -59,7 +59,7 @@ body {
 }
 
 .content a {
-    color: black;
+    color: #FFE6CE;
     text-decoration: underline;
     font-weight: bold;
 }
@@ -135,5 +135,5 @@ body {
 .copyright-text {
     margin-top: 20px;
     font-size: 14px;
-    color: black;
+    color: #FFE6CE;
 }
